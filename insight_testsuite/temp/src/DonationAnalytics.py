@@ -28,31 +28,26 @@ class Donor(object):
             amount = float(csv_buffer[14])
             other = csv_buffer[15]
         except (IndexError, ValueError):
-            print("skip this donor record as challenge description")
+            print("ignore this record as description")
             return None
 
         if (len(zip_code) < 5) or (other) or (not name) or (not cmte):
-            print("skip this donor record as challenge description")
+            print("ignore this record as description")
             return None
 
         return Donor(cmte, name, zip_code[:5], date, int(amount+0.5), other)
 
 
 if __name__ == "__main__":
-    # default path argv
+    # set default input/output path
     input_itcont_file = 'input/itcont.txt'
     input_percentile_file = 'input/percentile.txt'
     output_file = 'output/repeat_donors.txt'
 
+    # set input/output path when explicitly given in system.argv
     try:
         input_itcont_file = sys.argv[1]
-    except IndexError:
-        pass
-    try:
         input_percentile_file = sys.argv[2]
-    except IndexError:
-        pass
-    try:
         output_file = sys.argv[3]
     except IndexError:
         pass
