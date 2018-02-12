@@ -52,5 +52,6 @@ On success:
     [Sun Feb 11 12:00:45 EST 2018] 1 of 1 tests passed
 
 Contact: 'ytzhang.bu@gmail.com'
-Disclaimer: for any question about the challenge description, plase email `cc@insightdataengineering.com` 
+
+Disclaimer: for any question about the insight date engineering program and the coding challenge, plase email `cc@insightdataengineering.com` 
 
