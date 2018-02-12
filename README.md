@@ -1,5 +1,5 @@
-
-This is the solution response to the Insight Data Science challege. 
+## Description 
+This is the solution response to the [Insight Data Engineering](http://insightdataengineering.com) Coding Challege. The objective is to identify areas with donation statistics that could be resources of repeat campaign contributions for political donation recipients. This program streamingly processes input donation records from a Federal Election Commission data file, internally identify repeat donors based on (name, zip code), and explicitly output donation statistics for a recipient from an area (zip code) in a calendar year in terms of a given percentile (from input) and totol amount in a sorted order. More details about the challenge problem is in the Github repo [InsightDataScience/donation-analytics](https://github.com/InsightDataScience/donation-analytics)
 
 ## System requirements 
 The solution src runs and is tested against Python 3.6.4 with default packages on OSX.
@@ -51,7 +51,12 @@ On success:
     [PASS]: test_1
     [Sun Feb 11 12:00:45 EST 2018] 1 of 1 tests passed
 
-Contact: 'ytzhang.bu@gmail.com'
+## Additional comments
+This program can be enriched to perform more selection functionalities for one or multiple specific recipient, in a given area, and in a given year. This becomes a powerful tool to provide consultanting services to the customers. 
 
-Disclaimer: for any question about the insight date engineering program and the coding challenge, plase email `cc@insightdataengineering.com` 
+## Contact: 
+'ytzhang.bu@gmail.com'
+
+## Disclaimer: 
+For any question about the Insight Data Engineering Fellowship and the Coding Challenge, plase email `cc@insightdataengineering.com` 
 
